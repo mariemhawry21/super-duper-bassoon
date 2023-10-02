@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculator app</title>
+</head>
+
+<body>
+  <main id="calculator" class="theme-1">
+    <div class="cont">
+      <div class="head">
+        <h1>calc</h1>
+        <div class="theme-con">
+          <div class="section1">
+            <p>THEME</p>
+          </div>
+          <div class="section2">
+            <p>1 2 3</p>
+            <input type="range" min="1" max="3" step="1" value='1' name="ranges" class="color-theme"
+              onchange="changeTheme()">
+          </div>
+        </div>
+      </div>
+      <div class="display">
+        <p>Hello</p>
+      </div>
+      <div class="all">
+        <div class="operations">
+          <button onclick="pushToScreen(7)">7</button>
+          <button onclick="pushToScreen(8)">8</button>
+          <button onclick="pushToScreen(9)">9</button>
+          <button onclick="del()" class="del">DEL</button>
+          <button onclick="pushToScreen(4)">4</button>
+          <button onclick="pushToScreen(5)">5</button>
+          <button onclick="pushToScreen(6)">6</button>
+          <button onclick="doOperation('+')">+</button>
+          <button onclick="pushToScreen(1)">1</button>
+          <button onclick="pushToScreen(2)">2</button>
+          <button onclick="pushToScreen(3)">3</button>
+          <button onclick="doOperation('-')">-</button>
+          <button onclick="pushToScreen('.')">.</button>
+          <button onclick="pushToScreen(0)">0</button>
+          <button onclick="doOperation('/')">/</button>
+          <button onclick="doOperation('*')">x</button>
+        </div>
+
+        <div class="end">
+          <button onclick="Reset()" class="del">RESET</button>
+          <button onclick="doOperation('=')" class="equal">=</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
